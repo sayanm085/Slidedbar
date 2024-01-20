@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ 
+}
+body{
+  background-image: url(./image/pexels-kyle-roxas-2138922.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.sideberMenu{
+    position: absolute;
+    background-color: rgba(122, 60, 161, 0.203);
+    backdrop-filter:blur(15px);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.6) ;
+    left: -450px;
+    height: 695px;
+    width: 350px;
+    display: flex;
+    transition: 0.9s;
+    flex-direction: column;
+    align-items: center;
+}
+.sideberMenu .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 1) ;
+    font-size: 1.70rem;
+}
+.logo a{
+    
+    text-decoration: none;
+    color: #520154;
+}
+.allOption{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+.allOption .li{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border: 2px solid transparent;
+    
+}
+.allOption .li:hover{
+    border: 2px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 1) ;
+    color: black;
+
+}
+
+.Option{
+    text-decoration: none;
+    color: #fff;
+}
+.Option i{
+   margin-left: 40px;
+    margin-right: 20px;
+}
+.Socialmedia{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.55rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Socialmedia i:hover{
+    
+    font-size: 1.95rem;
+}
+
+
+
+
+#checkbox{
+    display: none;
+}
+#checkbox1{
+    display: none;
+}
+
+.btn{
+    color: white;
+    font-size: 1.95rem;
+    top: 6px;
+    left: 10px;
+    position: absolute;
+}
+.btn i{
+
+  padding: 20px;
+}
+
+.btn2{
+    color: rgb(70, 70, 70);
+    font-size: 1.95rem;
+    position: absolute;
+    right:  30px;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+.btn i:hover{
+    font-size: 1.75rem;
+}
+.btn2 i:hover{
+    font-size: 1.75rem;
+}
+
+
+#checkbox:checked~.sideberMenu{
+  left: 0;
+  
+}
+
+
+
+
+
+
